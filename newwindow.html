@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nueva Ventana</title>
+    <script>
+        function obtenerParametros() {
+            const params = new URLSearchParams(window.location.search);
+            const nombre = params.get('name');
+            const edad = params.get('age');
+
+            document.getElementById('info').innerHTML = `
+                <p>Nombre: ${nombre}</p>
+                <p>Edad: ${edad}</p>
+            `;
+        }
+
+        function actualizarParametros() {
+            const nuevoNombre = document.getElementById('nuevoNombre').value;
+            const nuevaEdad = document.getElementById('nuevaEdad').value;
+            window.location.search = `?name=${nuevoNombre}&age=${nuevaEdad}`;
+        }
+    </script>
+</head>
+<body onload="obtenerParametros()">
+    <div id="info">
+        <p>La información aparecerá aquí.</p>
+    </div>
+    <form onsubmit="actualizarParametros(); return false;">
+        <label for="nuevoNombre">Nuevo Nombre:</label>
+        <input type="text" id="nuevoNombre" required><br>
+        <label for="nuevaEdad">Nueva Edad:</label>
+        <input type="number" id="nuevaEdad" required><br>
+        <button type="submit">Actualizar</button>
+    </form>
+</body>
+</html>

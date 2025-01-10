@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <script>
+      
+        let ventanaSecundaria;
+
+        function enviarDatos() {
+            const nombre = document.getElementById('nombre').value;
+            const fechaNacimiento = new Date(document.getElementById('fechaNacimiento').value);
+            const numero = parseFloat(document.getElementById('numero').value);
+
+            const edad = new Date().getFullYear() - fechaNacimiento.getFullYear();
+            const raizCuadrada = Math.sqrt(numero).toFixed(2);
+            const numeroFormateado = numero.toFixed(2);
+            const nombreMayusculas = nombre.toUpperCase();
+
+            const bottomFrame = parent.frames['bottomFrame'];
+           
+
+/*             bottomFrame.document.getElementById('resultado').innerHTML = '<p>Nombre: ' + nombreMayusculas +
+                '</p><p>Edad: '+edad+
+                    '</p><p>Número: '+numeroFormateado+
+                        '</p><p>Raíz Cuadrada: '+raizCuadrada+'</p>'
+            ; */
+
+            bottomFrame.document.getElementById('resultado').innerHTML = `
+                <p>Nombre: ${nombreMayusculas}</p>
+                <p>Edad: ${edad}</p>
+                <p>Número: ${numeroFormateado}</p>
+                <p>Raíz Cuadrada: ${raizCuadrada}</p>
+            `; 
+        }
+
+        function abrirVentana() {
+            const nombre = document.getElementById('nombre').value;
+            const edad = new Date().getFullYear() - new Date(document.getElementById('fechaNacimiento').value).getFullYear();
+            ventanaSecundaria = window.open(`newwindow.html?name=${nombre}&age=${edad}`, 'NuevaVentana', 'width=600,height=400');
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="enviarDatos();">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fechaNacimiento" required><br>
+        <label for="numero">Número:</label>
+        <input type="number" id="numero" required><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <button onclick="abrirVentana()">Abrir Nueva Ventana</button>
+    <br>
+    <input type="text" id="url" placeholder="Introduce una URL">
+    <input type="button" value="Mostrar URL en ventana secundaria" onclick="ventanaSecundaria.location = document.getElementById('url').value;">
+</body>
+</html>
