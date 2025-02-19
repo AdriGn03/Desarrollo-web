@@ -6,7 +6,7 @@ Soy un desarrollador web cursando  actualmnete el segundo curso de daw.
 ## 🛠️ Habilidades
 - **Lenguajes:** JavaScript,Php,Java,C++,SQL
 - **Frameworks & Librerías:** React, Node.js, Django, Bootstrap ,Vue 
-- **Herramientas:** Git, Docker, Kubernetes, AWS, CI/CD
+- **Herramientas:** Git, AWS,
 
 ## 🌟 Proyectos Destacados
 - [📌 Proyecto 1](https://github.com/tuusuario/proyecto1) - Breve descripción del proyecto.
