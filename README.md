@@ -9,7 +9,7 @@ Soy un desarrollador web cursando  actualmnete el segundo curso de daw.
 - **Herramientas:** Git, AWS,
 
 ## 🌟 Proyectos Destacados
-- [📌 Proyecto 3]- Serie de pryectos utilizando c++
+- [📌 Proyecto 4]- Serie de pryectos utilizando c++
 
 ## 📬 Contacto
 - [LinkedIn](www.linkedin.com/in/adriangdn)
