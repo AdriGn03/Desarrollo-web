@@ -9,7 +9,7 @@ Soy un desarrollador web cursando  actualmnete el segundo curso de daw.
 - **Herramientas:** Git, AWS,
 
 ## 🌟 Proyectos Destacados
-- [📌 Proyecto 5]- Hojas de ejercicio de consultas en sql.
+- [📌 Proyecto 6]- Hojas de ejercicio de consultas en sql.
 
 ## 📬 Contacto
 - [LinkedIn](www.linkedin.com/in/adriangdn)
