@@ -9,7 +9,7 @@ Soy un desarrollador web cursando  actualmnete el segundo curso de daw.
 - **Herramientas:** Git, AWS,
 
 ## 🌟 Proyectos Destacados
-- [📌 Proyecto 4]- Trabajo con node haciendo el curso basico.
+- [📌 Proyecto 5]- Trabajo con node haciendo el curso basico.
 
 ## 📬 Contacto
 - [LinkedIn](www.linkedin.com/in/adriangdn)
